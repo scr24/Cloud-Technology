@@ -43,33 +43,33 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <div style="text-align: center;">
-<img src="dockerstep1.jpg" alt="step 1" style="height: 350px; width: 500px;"/>
+<img src="dockerstep1.png" alt="step 1" style="height: 350px; width: 500px;"/>
 <p style="font-family: 'Courier New'; font-size: 20px; text-align: left;">  
     </p>
 
 <p style="font-family: 'Courier New'; font-size: 20px; text-align: left;"> Step 2 is to pull an Ubuntu image from Dockerhub. Running the command "docker pull ubuntu" 
     will do the trick. Type "docker images" after pulling to verify that an image was pulled. 
     </p>
-<img src="dockerstep2.jpg" alt="step 2" style="height: 350px; width: 500px;"/>
+<img src="dockerstep2.png" alt="step 2" style="height: 350px; width: 500px;"/>
 
 <p style="font-family: 'Courier New'; font-size: 20px; text-align: left;"> Step 3 is to configure the image. Type "docker run -it ubuntu:latest /bin/bash". Upon 
     logging in perform an update by typing "apt-get update". Install Apache2 by typing "apt-get install apache2". Install vim by typing "apt-get vim". At this point 
     you will have a blank template image ready for hosting web servers. Type "exit" to commit the changes. 
     </p>
-<img src="dockerstep3.jpg" alt="step 3" style="height: 350px; width: 500px;"/>
+<img src="dockerstep3.png" alt="step 3" style="height: 350px; width: 500px;"/>
 
 <p style="font-family: 'Courier New'; font-size: 20px; text-align: left;"> Step 4 is to share the data between your docker container and your host system. Type the 
     command "docker run -it -p 127.0.0.1:80:80 -v H:\Docker_tutorial\local_dir:/var/www/htmlubuntu-my_apache2 /bin/bash". The 127 ip address is where your local 
     host will display the webpage. The "H" drive location should be replaced with the absolut path of your choice depending on where you want to store your 
     webpage's files. 
     </p>
-<img src="dockerstep4.jpg" alt="step 4" style="height: 350px; width: 500px;"/>
+<img src="dockerstep4.png" alt="step 4" style="height: 350px; width: 500px;"/>
     
 <p style="font-family: 'Courier New'; font-size: 20px; text-align: left;"> Step 5 is to create and populate your index page. You will first have to go to the 
     proper directory which can be reached by typing "cd /var/www/html/". Now you will want to type "vim index.html". This will open a text file where you can type html 
     code to display on your webpage. 
     </p>
-<img src="dockerstep5.jpg" alt="step 5" style="height: 350px; width: 500px;"/>
+<img src="dockerstep5.png" alt="step 5" style="height: 350px; width: 500px;"/>
 </div>
 </body>
 </body>
